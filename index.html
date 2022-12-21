@@ -4,448 +4,396 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sonali Ghorpade Portfolio</title>
-    <link rel="icon" href="files/Sonali.jpeg"/>
+    <title>Sonali_Ghorpade_Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
     />
+    <script
+      src="https://kit.fontawesome.com/af655f73fe.js"
+      crossorigin="anonymous"
+    ></script>
 
-    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+
+   
   </head>
   <body>
-    <!-- header section starts  -->
-
-    <header class="header">
-      <div class="user">
-        <img style="height:20% ;" src="files/Sonali.jpeg"  alt="" />
-        <h3>Sonali Ghorpade</h3>
-        <p>java backend developer</p>
-      </div>
-
-      <nav class="navbar">
-        <a href="#home">home</a>
-        <a href="#about">about</a>
-        <a href="#skills">skills</a>
-        <a href="#projects">projects</a>
-        <a href="#contact">contact</a>
-        <a href="./files/Sonali_Ghorpade_Resume_..pdf">resume</a>
-      </nav>
-    </header>
-    <!-- header section ends  -->
-
-    <div id="menu-btn" class="fas fa-bars"></div>
-
-    <!-- theme toggler  --> 
-
-     <div id="theme-toggler" class="fas fa-moon"></div>
-
-  
-      <!-- home section starts  -->
-
-      <section class="home" id="home">
-        <div class="content">
-          <h3>
-            <span>Hi, I'm </span>
-            <span>Sonali Ghorpade</span>
-            
-          </h3> 
-          <br>                   
-            <p>i am a java backend developer</p>
-            <a
-                href="./files/Sonali_Ghorpade_Resume_..pdf"
-                download
-                target="_blank"
-                class="btn"
-                >download Resume</a
-            >
-        </div>
-
-        <div class="share">
-            <!-- <a href="#" class="fab fa-facebook-f"></a> -->
-            <a href="#" class="fab fa-twitter"></a>
-           
-            <a href="https://github.com/RahulSonali" target="_blank" class="fab fa-github"></a>
-            <!-- <a href="#" class="fab fa-pinterest"></a> -->
-            <a href="#" class=""></a>
-            <a href="https://www.linkedin.com/in/sonali-ghorpade-5633aa232/" target="_blank"class="fab fa-linkedin">
-        
-            </a>
-        </div>
-    </section>
-
-    <!-- home section ends -->
-    
-
-    
-
-
-    <section class="about" id="about">
-      <h1 class="heading"><span>about</span> me</h1>
-
-      <div class="row">
-          <div class="content">
-              <h3>I am <span>Sonali Ghorpade</span></h3>
-              <p>
-                Strong In Design And Integration With Intuitive Problem-Solving Skills.
-                Efficient In Java, Spring-Boot, SQL, and Javascript. Passionate About
-                Implementing And Launching New Projects. Ability To Translate Business
-                Requirements Into Technical Solutions. Looking To Start The Career as A
-                Backend Developer With A Reputed Firm Driven By Technology.
-              </p>
-
+    <div id="header">
+      <div class="container">
+        <nav id="navbar">
+          <!-- <img src="images/Anurag-designstyle-summer-m.png" alt="logo" class="logo"> -->
+          <h1 class="logo">Sonali</h1>
+          <ul id="sidemenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#tech-stack">Skills</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+            <li>
               <a
-                  href="./files/Sonali_Ghorpade_Resume_..pdf"
-                  download
-                  target="_blank"
-                  class="btn"
+                href="images/Sonali_Ghorpade_Resume_..pdf"
+               
+                >Resume</a
               >
-                  Download Resume
-              </a>
-          </div>
+              <!-- https://drive.google.com/file/d/1uuO1_8aqfl3bp23uzOjcppcK-4b3LVGT/view?usp=sharing -->
+            </li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
       </div>
-  </section>
-
-    <!-- about section ends -->
-
-    <!-- skills section start -->
-    <section class="skills" id="skills">
-      <h1 class="heading">my <span>Technical</span> skills</span></h1>
-
-      <div class="box-container">
-        <div class="skills_div">
-          <div class="skills_card">
-            <div class="image_div">
-              <img src="files/java-logo.png" alt="" />
-            </div>
-            <h1 class="skills_text">
-              <span id="skill_title" className="heading "> Java </span>
-            </h1>
-          </div>
-          <div class="skills_card">
-            <div class="image_div">
-              <img src="files/Spring_Framework-Logo.wine.png" alt="" />
-            </div>
-            <h1 class="skills_text">
-              <span id="skill_title" className="heading "> SPRING BOOT </span>
-            </h1>
-          </div>
-          <div class="skills_card">
-            <div class="image_div">
-              <img src="files/MySQL-Logo.wine.png" alt="" />
-            </div>
-            <h1 class="skills_text">
-              <span id="skill_title" className="heading"> MySQL </span>
-            </h1>
-          </div>
-          <div class="skills_card">
-            <div class="image_div">
-              <img src="files/js.png" alt="" />
-            </div>
-            <h1 class="skills_text">
-              <span id="skill_title" className="heading "> JAVASCRIPT</span>
-            </h1>
-          </div>
-          <div class="skills_card">
-            <div class="image_div">
-              <img src="files/html.png" alt="" />
-            </div>
-            <h1 class="skills_text">
-              <span id="skill_title" className="heading "> HTML </span>
-            </h1>
-          </div>
-          <div class="skills_card">
-            <div class="image_div">
-              <img src="files/css.png" alt="" />
-            </div>
-            <h1 class="skills_text">
-              <span id="skill_title" className="heading "> CSS </span>
-            </h1>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- skills section ends -->
-
- <!-- project section start -->
-    <section class="portfolio" id="projects">
-      <h1 class="heading">my <span>projects</span></h1>
-
-      <div class="box-container">
-          <div class="box">
-              <img style=" object-fit: cover" src="./files/Project1.png" alt="" />
-              <div class="content">
-                  <h3>Monster India Clone</h3>
-
-                  <div
-                      style="
-                          display: flex;
-                          justify-content: space-around;
-                          width: 40%;
-                      "
-                  >
-                      <a
-                          class="icons-git"
-                          target="_blank"
-                          rel="noreferrer"
-                          href="https://github.com/RahulSonali/enormous-weight-975"
-                      >
-                          <img
-                              style="height: 100%; width: 100%"
-                              src="files/github-brands.svg"
-                              alt=""
-                          />
-                      </a>
-                      <a
-                          class="icons-git"
-                          target="_blank"
-                          rel="noreferrer"
-                          href="https://enormous-weight-975.netlify.app/"
-                      >
-                          <img
-                              style="height: 100%; width: 100%"
-                              src="files/globe-solid.svg"
-                              alt=""
-                          />
-                      </a>
-                  </div>
-              </div>
-              <div class="newDiv">
-                  <h3>Monster.com is a global employment website owned and operated by Monster Worldwide.</h3>
-                  <h3>TECH STACK:</h3>
-                  <h3>Built with HtMl, JavaScript,Css</h3>
-                  <h3>FEATURES :</h3>
-                 <h3>Users can scroll through the page,and Top navigation bar presents easy access to all the features
-                   & functionalities available to your employer account.
-                  
-                    </h3>
-
-              </div>
-          </div>
-          <div class="box">
-              <img  style=" object-fit: cover"src="files/Project2.jpeg" alt="" />
-              <div class="content">
-                  <h3>ZARA Clone</h3>
-
-                  <div
-                      style="
-                          display: flex;
-                          justify-content: space-around;
-                          width: 40%;
-                      "
-                  >
-                      <a
-                          class="icons-git"
-                          target="_blank"
-                          rel="noreferrer"
-                          href="https://github.com/Abhishek-RX/JS_201_Group-Project"
-                      >
-                          <img
-                              style="height: 100%; width: 100%"
-                              src="files/github-brands.svg"
-                              alt=""
-                          />
-                      </a>
-                      <a
-                          class="icons-git"
-                          target="_blank"
-                          rel="noreferrer"
-                          href="https://chipper-piroshki-852822.netlify.app/"
-                      >
-                          <img
-                              style="height: 100%; width: 100%"
-                              src="files/globe-solid.svg"
-                              alt=""
-                          />
-                      </a>
-                  </div>
-              </div>
-              <div class="newDiv">
-                  <h3>Zara stores have men's and women's clothing as well as children's.The majority of Zara customers are aged between 18 and about 35.</h3>
-                  <h3>TECH STACK:</h3>
-                  <h3>Built with Html, JavaScript and Css</h3>
-                  <h3>FEATURES:</h3>
-                 <h3>
-                  Zara's strategy is to offer a higher number of available products than its competitors.
-                    
-                 </h3>
-  
-              </div>
-          </div>
-<div class="box">
-              <img  src="files/Project3.jpeg" alt="" />
-              <div class="content">
-                  <h3>Cult Fit Website</h3>
-
-                  <div
-                      style="
-                          display: flex;
-                          justify-content: space-around;
-                          width: 40%;
-                      "
-                  >
-
-
-
-
-
-
-                  
-                      <a
-                          class="icons-git"
-                          target="_blank"
-                          rel="noreferrer"
-                          href="https://github.com/RahulSonali/composed-linen-9715"
-                      >
-                          <img
-                              style="height: 100%; width: 100%"
-                              src="files/github-brands.svg"
-                              alt=""
-                          />
-                      </a>
-                      <a
-                          class="icons-git"
-                          target="_blank"
-                          rel="noreferrer"
-                          href="https://euphonious-torte-e0d1f6.netlify.app/">
-                          <img style="height: 100%; width: 100%"src="files/globe-solid.svg" alt=""/>
-                      </a>
-                  </div>
-              </div>
-              <div class="newDiv">
-                  <h3>Cure.fit is a health and fitness company offering digital and offline experiences across fitness, nutrition, and mental well-being.</h3>
-                  <h3>TECH STACK:</h3>
-                  <h3>Built with HTML,CSS</h3>
-                  <h3>FEATURES :</h3>
-                 <h3>Gives user access to quality yoga and meditation programs.
-                    </h3>
-
-              </div>
-          </div>
-
-         
-          </div>
-     
-  </section>
-
-
-
-
-
-  <!-- about section starts  -->
-
-  <section class="about" id="about">
-    <h1 class="heading"><span>STATISTICS</span></h1>
-
-    <div class="row">
-        <div class="box-container">
-            <div class="box">
-                <h3>1200+</h3>
-                <p>Hours of Coding skill</p>
-            </div>
-            <div class="box">
-                <h3>100+</h3>
-                <p>Hours of Soft Skill Sessions</p>
-            </div>
-            <div class="box">
-                <h3>3+</h3>
-                <p>Full Stack projects done</p>
-            </div>
-            <div class="box">
-                <h3>250+</h3>
-                <p>
-                  Git Commits</p>
-            </div>
-        </div>
-
     </div>
 
-
-    <div class="container" id="stat" style="margin-bottom: 4%;">
-        <!-- <h1 class="sub-titl">My Stats</h1> -->
-        <h1><br></h1>
-    
-        <div class="stats" style="width: 100%;">
-            <img src="https://github-readme-stats.vercel.app/api?username=RahulSonali&theme=dark&hide_border=false&include_all_commits=true&count_private=false" alt="">
-            <img src="https://github-readme-streak-stats.herokuapp.com/?user=RahulSonali&theme=dark&hide_border=false" alt="">
-            <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=RahulSonali&theme=dark&hide_border=false&include_all_commits=true&count_private=false&layout=compact" alt="">
+    <div id="header_container" class="container">
+      <div class="my-header">
+        <div class="header-text">
+          <p>Hey! This is</p>
+          <h1><span>Sonali Ghorpade </span> <br />Java Backend Developer</h1>
         </div>
-    
-        <div class="calendar" style=" color: #f49812" >
-            <!-- Loading stuff -->
-            Loading the data just for you.
+        <div class="my-resume">
+          <a
+            class="resume"
+            href="images/Sonali_Ghorpade_Resume_..pdf"
+            ><h1>Resume</h1></a
+          >
         </div>
-    
+      </div>
     </div>
-    
-    <script
-    src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"
-    ></script>
-    
-    <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
-    <link
-    rel="stylesheet"
-    href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
-    />
-    
-    <!-- Prepare a container for your calendar. -->
-    
-    
+    <!-- -------------About------------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/sonali.jpeg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p class="about_intro">
+              Hello! My name is Sonali Ghorpade  and I am a Bootcamp graduate
+              from Masai School, Bengaluru. I am a highly passionate Backend
+              developer who loves, creating APIs, and working with databases. I
+              am also extremely interested in creating elegant solutions, more
+              specifically on System Design and High performaning solutions.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('tech_skills')">
+                Tech Skills
+              </p>
+              <p class="tab-links" onclick="opentab('soft_skills')">
+                Soft Skills
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="tech_skills">
+              <ul>
+                <li>
+                  <span>Back-End Developement</span><br />Java | Spring Boot |
+                  My SQL
+                </li>
+                <li>
+                  <span>Front-End Developement</span><br />HTML | CSS |
+                  JavaScript
+                </li>
+                <li><span>Data Structures and Algorithms</span></li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="soft_skills">
+              <ul>
+                <li><span>Teamwork</span></li>
+                <li><span>Problem solving</span></li>
+                <li><span>Time Management</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------------Tech Stack---------------- -->
+    <div id="tech-stack">
+      <div class="container">
+        <h1 class="sub-title">Tech Stack</h1>
+        <div id="tech-stack-maindiv">
+          <div class="tech-stack-boxes">
+            <div>
+              <img
+                class="skill_img"
+                src="images/java-original.svg"
+                alt="Java"
+              />
+            </div>
+            <div>
+              <img class="skill_img" src="images/html5-original-wordmark.svg" />
+            </div>
+            <div>
+              <img
+                class="skill_img"
+                src="images/css3-original-wordmark.svg"
+                alt="CSS"
+              />
+            </div>
+            <div>
+              <img
+                class="skill_img"
+                src="images/javascript-original.svg"
+                alt="JS"
+              />
+            </div>
+            <div>
+              <img
+                class="skill_img"
+                src="images/springio-icon.svg"
+                alt="Spring"
+              />
+            </div>
+            <div>
+              <img
+                class="skill_img"
+                src="images/mysql-original-wordmark.svg"
+                alt="MySql"
+              />
+            </div>
+            <div>
+              <img class="skill_img" src="images/git.png" alt="MySql" />
+            </div>
+            <div>
+              <img class="skill_img" src="images/dsa.png" alt="MySql" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -----------Projects--------------->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/Project1.png" alt="" />
+            <div class="layer">
+              <h3>Monster India Clone</h3>
+              <p>
+                Monster.com is a global employment website owned and operated by Monster Worldwide,
+                Users can scroll through the page,and Top navigation bar presents easy access to all the features & 
+                functionalities available to your employer account.
+                It was a collaborative project built by the team of 5 members executed in 5 days.
+              </p>
+              <p>Tech stack:- HTML | CSS | JavaScript</p>
+              <div class="link-icons">
+                <a
+                  href="https://github.com/RahulSonali/enormous-weight-975"
+                  target="_blank"
+                  ><i class="fa-brands fa-github fontawesome"></i
+                ></a>
+                <a
+                  href="https://enormous-weight-975.netlify.app/"
+                  target="_blank"
+                  ><i class="fa-brands fa-chrome fontawesome"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/project3.webp" alt="" />
+            <div class="layer">
+              <h3>Cult Fit Website</h3>
+              <p>
+                Cure.fit is a health and fitness company offering digital and offline experiences across fitness, nutrition, and mental well-being,
+                 it gives user access to quality yoga and meditation programs.
+              </p>
+              <p>Tech stack:- HTML | CSS | JavaScript</p>
+              <div class="link-icons">
+                <a
+                  href="https://github.com/RahulSonali/composed-linen-9715"
+                  target="_blank"
+                  ><i class="fa-brands fa-github fontawesome"></i
+                ></a>
+                <a
+                  href="https://euphonious-torte-e0d1f6.netlify.app/"
+                  target="_blank"
+                  ><i class="fa-brands fa-chrome fontawesome"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="work">
+            <img
+              src="images/Project2.jpeg"
+              alt=""
+            />
+            <div class="layer">
+              <h3>ZARA clone</h3>
+              <p>
+                ZARA is an e-commerce website having varieties of luxury items which are of high quality. 
+                We have tried to clone the pixel perfect website.The clone has created during construct week with the help of 4 group members.
+              </p>
+              <p>Tech stack:- HTML | CSS | JavaScript </p>
+              <div class="link-icons">
+                <a
+                  href="https://github.com/Abhishek-RX/JS_201_Group-Project"
+                  target="_blank"
+                  ><i class="fa-brands fa-github fontawesome"></i
+                ></a>
+                <a
+                  href="https://chipper-piroshki-852822.netlify.app/"
+                  target="_blank"
+                  ><i class="fa-brands fa-chrome fontawesome"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="work">
+            <img
+              src="images/project4.png"
+              alt=""
+            />
+            <div class="layer">
+              <h3>Course Monitoring System</h3>
+              <p>
+                It is a individual project which keep the records of all the
+                courses, batches, faculties and the day wise update for every
+                batch.
+              </p>
+              <p>Tech stack:- Java | MySQL | Git&Github</p>
+              <div class="link-icons">
+                <a
+                  href=""
+                  target="_blank"
+                  ><i class="fa-brands fa-github fontawesome"></i
+                ></a>
+                <a
+                  href=""
+                  target="_blank"
+                  ><i class="fa-brands fa-chrome fontawesome"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------Github Contribution----------------- -->
+
+    <div id="github">
+      <div class="container git-container">
+        <h1 class="git-heading">Github Contribution</h1>
+        <div class="calendar" id="calen">Loading the data just for you.</div>
+      </div>
+    </div>
+
+    <picture>
+      <!-- <source srcset = "https://github-readme-stats.vercel.app/api?username=Anurag-shekawat&show_icons=true" media = "(prefers-color-scheme: dark)"/>
+      <img class = w-100 src ="https://github-readme-stats.vercel.app/api?username=Anurag-shekawat&show_icons=true"/> -->
+      <img
+        class="w-100"
+        src="https://github-readme-streak-stats.herokuapp.com/?user=RahulSonali&theme=radical"
+        width="48%"
+      />
+    </picture>
+
+    <!-- ------------Contact---------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fas fa-paper-plane"></i> Ghorpadesonali1999@gmail.com
+            </p>
+            <p><i class="fas fa-phone-square-alt"></i> +91 7796184814</p>
+            <div class="social-icons">
+              <a href="https://github.com/RahulSonali" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                href="http://linkedin.com/in/sonali-ghorpade-5633aa232/"
+                target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button class="btn" type="submit">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Made with <i class="fas fa-heart"></i> by Sonali Ghorpade</p>
+      </div>
+    </div>
+
     <script>
-    GitHubCalendar(".calendar", "RahulSonali");
-    
-    GitHubCalendar(".calendar", "RahulSonali", { responsive: true });
+      GitHubCalendar(".calendar", "RahulSonali");
+      // or enable responsive functionality
+      GitHubCalendar(".calendar", "RahulSonali", { responsive: true });
     </script>
-  
 
-</section>
+    <script>
+      let tablinks = document.getElementsByClassName("tab-links");
+      let tabcontents = document.getElementsByClassName("tab-contents");
 
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
 
+    <script>
+      let sidemenu = document.getElementById("sidemenu");
 
-<!-- about section ends -->
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
 
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
 
-
-
-
-
-
-    <!-- contact section starts  -->
-
-    <section class="contact" id="contact">
-      <h1 class="heading"><span>contact</span> me</h1>
-
-      <div class="row">
-        <div class="content">
-          <h3 class="title">contact info</h3>
-
-          <div class="info">
-            <h3><i class="fas fa-envelope"></i>ghorpadesonali1999@gmail.com</h3>
-            <h3><i class="fas fa-phone"></i>7796184814</h3>
-            <h3><i class="fab fa-github"></i> 
-            <a href="https://github.com/RahulSonali" target="_blank">Github</a>
-            </h3>
-            <h3><i class="	fab fa-linkedin"></i> 
-              <a href="linkedin.com/in/sonali-ghorpade-5633aa232" target="_blank">linkedin</a>
-              </h3>
-             
-            <h3>  <i class="fas fa-map-marker-alt"></i> Hyderabad, Telangana - 500049.
-            </h3>
-          </div>
-        </div>
-       
-      </div>
-
-    </section>
-
-    <div class="bottom_credit">
-        created by  <a href="#about">Sonali Ghorpade</a> | all rights reserved
-    </div>
-
-    <!-- contact section ends -->
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwBZyZxUx3KpV7akyYbaayR2josKuSscvFU1MFJJl722RhwPrvaPk95rV-RPfAMRoq5/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            4;
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
   </body>
 </html>
-
-
-<script src="script.js"></script>
