@@ -11,10 +11,17 @@ html{
     scroll-behavior: smooth;
 }
 
+
+
+
 body{
     background: #080808;
     color: #fff;
 }
+
+
+
+
 
 #header{
     top: 0;
@@ -57,6 +64,10 @@ nav ul li a {
     position: relative;
 }
 
+
+
+
+
 nav ul li a::after{
     content: '';
     width: 0;
@@ -86,6 +97,9 @@ nav ul li a:hover::after{
     color: #ff004f;
 }
 
+
+
+
 .my-header{
     display: flex;
     align-items: center;
@@ -103,6 +117,7 @@ nav ul li a:hover::after{
     text-align: center;
     border-radius: 10px;
     flex-basis: 20%;
+    
     margin-top: 15%;
 }
 
@@ -156,6 +171,9 @@ nav ul li a:hover::after{
     font-size: 17px;
 }
 
+
+
+
 .tab-titles{
     display: flex;
     margin: 20px 0 40px;
@@ -179,6 +197,9 @@ nav ul li a:hover::after{
     bottom: -8px;
     transition: 0.5s;
 }
+
+
+
 
 .tab-links.active-link::after{
     width: 50%;
@@ -207,6 +228,9 @@ nav ul li a:hover::after{
 #tech-stack-maindiv{
     margin-top: 30px;
 }
+
+
+
 
 .tech-stack-boxes{
     /* border: 1px solid red; */
